@@ -49,4 +49,4 @@
 
 ## Extras
     - I converted the temperature value from kelvin to celsius.
-    - The date format is as follows: DD.MM.YYYY .
+    - The date format is as follows: DD.MM.YYYY.
