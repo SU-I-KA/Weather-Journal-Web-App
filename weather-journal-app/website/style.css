@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f8fd;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* styling the container of the whole website */
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*----------- start of head title ----------------*/
+
+.headline {
+    padding-bottom: 25px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.headline h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
+}
+
+.text-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline h1:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+    width: 45%;
+}
+
+/*----------- end of head title ----------------*/
+
+/**/
+#app{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 50px;
+    border: 1px solid #eeeeee;
+}
+
+
+.holder {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+
+/* -------------- start of submit form ------------*/
+
+
+.left-col {
+    flex: 0 0 45%;
+    max-width: 45%;
+    display: block;
+    position: relative;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #262626;
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input{
+    border-radius: 8px;
+    margin-top: 5px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.zip {
+    margin-bottom: 10px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    background-color: #febd01;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+
+}
+
+.content-center {
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+textarea{
+    border-radius: 8px;
+    max-height: 120px;
+    overflow: auto;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #838383;
+    text-transform: capitalize;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #838383;
+    text-transform: capitalize;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #838383;
+    text-transform: capitalize;
+}
+
+/* -------------- end of submit form ------------*/
+
+
+/*----------- start of data entry ----------------*/
+.entry{
+    width: 100%;
+    border-left: 1px solid #ced4da;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    min-height: 300px;
+}
+
+.entryHolder {
+    background-color: #fff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.col-6 {
+    flex: 0 0 calc(40% - 15px);
+    max-width: calc(40% - 15px);
+}
+
+.col-12 {
+    flex: 0 0 calc(60% - 15px);
+    max-width: calc(60% - 15px);
+}
+
+.col-6 p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #262626;
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 55px;
+    text-align: center;
+}
+
+#date{
+    border-radius: 8px;
+    margin-top: 5px;
+    height: 45px;
+    line-height: 33px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#temp{
+    border-radius: 8px;
+    margin-top: 5px;
+    height: 45px;
+    line-height: 33px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content{
+    border-radius: 8px;
+    margin-top: 5px;
+    min-height: 45px;
+    line-height: 33px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.title p{
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #262626;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 25px;
+}
+
+/*----------- end of data entry ----------------*/
+
+
+/* -------------- start of media queries ------------*/
+
+@media (max-width: 770px){
+    #app {
+        padding: 40px 20px;
+    }
+    .holder {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .entry {
+        border-left: none;
+        border-top: 1px solid #ced4da;
+        margin-top: 50px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 430px){
+    .headline h1 {
+        text-align: center;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* -------------- end of media queries ------------*/

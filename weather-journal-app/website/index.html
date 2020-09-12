@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--website wrapper-->
+    <div class="wrapper">
+      <div class="row">
+        <!--weather app headline-->
+        <div class ="text-center headline">
+          <h1>Weather Journal App</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div id = "app">
+
+          <div class="row space-between">
+            <!--data submit form-->
+            <div class="holder left-col">
+              <!--zip code input-->
+              <div class ="zip">
+                <label for="zip">Enter Zipcode here</label>
+                <input type="text" id="zip" placeholder="94040,us">
+              </div>
+              <!--user response input-->
+              <div class ="feel">
+                <label for="feelings">How are you feeling today?</label>
+                <textarea class= "myInput" id="feelings" placeholder="Feeling Great" rows="9" cols="50"></textarea>
+              </div>
+              <!--subnit button-->
+              <div class="row content-center">
+                <button id="generate" type = "submit"> Generate </button>
+              </div>
+            </div>
+            <!--the returninig data entry-->
+            <div class ="holder entry">
+              <div class="row">
+                <!--headline text-->
+                <div class = "text-center title">
+                  <p>Most Recent Entry</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="entryHolder">
+                  <!--response data of date -->
+                  <div class="row space-between">
+                    <div class="col-6">
+                      <p>Date</p>
+                    </div>
+                    <div class="col-12">
+                      <div id="date"></div>
+                    </div>
+                  </div>
+                  <!--response data of temperature -->
+                  <div class="row space-between">
+                    <div class="col-6">
+                      <p>Temperature</p>
+                    </div>
+                    <div class="col-12">
+                      <div id="temp"></div>
+                    </div>
+                  </div>
+                  <!--response data of user response entry -->
+                  <div class="row space-between">
+                    <div class="col-6">
+                      <p>Feel</p>
+                    </div>
+                    <div class="col-12">
+                      <div id="content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!--client-side js code -->
+    <script src="app.js" type="text/javascript"></script>
+
+  </body>
+</html>
